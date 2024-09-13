@@ -21,6 +21,7 @@ class Lab:
     """
 
     def read_file(self, filename):
+
         """
         Instead of running 0, this method should should Reads the contents of a text file and return it.
 
@@ -32,7 +33,7 @@ class Lab:
         """
         try:
             with open(filename, 'r') as file:
-                return 0
+                return file.read()
         except FileNotFoundError:
             print(f"File '{filename}' not found.")
             return None
